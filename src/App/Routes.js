@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
-import MainPage from '../pages/MainPage';
+import MainPage from '../pages/UniversityPage';
 import NotFoundPage from '../pages/NotFoundPage';
 import OtherPage from '../pages/OtherPage';
 
