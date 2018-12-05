@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
 
 class MainPageTemplate extends Component {
   render() {
@@ -6,6 +7,7 @@ class MainPageTemplate extends Component {
       <div>
         <h1>Main Page!</h1>
         <p>This is the main page!</p>
+        <NavLink to="/other">Go to other page</NavLink>
       </div>
     );
   }
