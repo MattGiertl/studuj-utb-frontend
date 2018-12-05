@@ -1,13 +1,9 @@
 import React, { Component } from 'react';
-import Button from '../atoms/Button/Button';
+import Routes from './Routes';
 
 class App extends Component {
   render() {
-    return (
-      <div>
-        <Button>Tlacitko</Button>
-      </div>
-    );
+    return <Routes />;
   }
 }
 
