@@ -1,23 +1,25 @@
 /** @jsx jsx */
 import { Component } from 'react';
 import { jsx } from '@emotion/core';
-import { NavLink } from 'react-router-dom';
 import PageLayoutWrapper from '../atoms/PageLayoutWrapper';
 
 import Layout from '../atoms/Layout';
 import PageHeader from '../organisms/PageHeader';
+import Widget from '../molecules/Widget';
 
 class MainPageTemplate extends Component {
   render() {
     return (
-      <PageLayoutWrapper header={<PageHeader middle="Main"/>}>
+      <PageLayoutWrapper header={<PageHeader middle="Main" />}>
         <Layout
-          css={{ flexDirection: 'column', margin: '0 15px', marginTop: '10px' }}
+          css={{
+            flexDirection: 'column',
+            margin: '0 12px',
+            marginTop: '10px',
+            width: '100%',
+          }}
         >
-          <h1 css={{ margin: 0, padding: 0 }}>Ahoj</h1>
-          <NavLink exact to="/other">
-            Go to other page
-          </NavLink>
+          <Widget count="10 000" title="Lorem Ipsum" />
         </Layout>
       </PageLayoutWrapper>
     );
