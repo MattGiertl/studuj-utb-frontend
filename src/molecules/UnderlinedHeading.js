@@ -5,6 +5,7 @@ import Paragraph from '../atoms/Paragraph';
 const UnderlinedHeading = ({ title }) => (
   <Paragraph
     color="black"
+    fontWeight="bold"
     css={{
       paddingBottom: '3px',
       borderBottom: '1px solid black',

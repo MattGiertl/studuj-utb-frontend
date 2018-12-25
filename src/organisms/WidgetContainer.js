@@ -14,8 +14,8 @@ const WidgetContainer = props => (
   >
     <Widget count="10 000" title="Lorem Ipsum" />
     <Layout css={{ justifyContent: 'space-between', marginTop: '15px' }}>
-      <Widget sm count="6" title="Dolor Sit" />
-      <Widget sm count="111" title="Amet Consect" />
+      <Widget sm count="6" title="Dolor Sit" widgetWidth="48%" />
+      <Widget sm count="111" title="Amet Consect" widgetWidth="48%" />
     </Layout>
   </Layout>
 );
