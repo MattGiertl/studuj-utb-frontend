@@ -3,7 +3,7 @@ import styled from '@emotion/styled';
 const Ribbon = styled.div(props => ({
   height: props.height ? props.height : '2.5rem',
   color: 'white',
-  background: 'orange',
+  background: '#FF590B',
   boxSizing: 'border-box',
   width: '100%',
   fontSize: '1rem',
