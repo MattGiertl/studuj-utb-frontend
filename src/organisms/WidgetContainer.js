@@ -8,7 +8,6 @@ const WidgetContainer = props => (
     css={{
       width: '100%',
       flexDirection: 'column',
-      margin: '0 12px',
       marginTop: '15px',
       marginBottom: '10px',
     }}
