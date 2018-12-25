@@ -10,10 +10,10 @@ import UnderlinedHeading from '../molecules/UnderlinedHeading';
 import TextWidget from '../organisms/TextWidget';
 import TextWidgetContainer from '../organisms/TextWidgetContainer';
 
-class MainPageTemplate extends Component {
+class UniversityPageTemplate extends Component {
   render() {
     return (
-      <PageLayoutWrapper header={<PageHeader middle="Main" />}>
+      <PageLayoutWrapper header={<PageHeader middle="Univerzita Tomáše Bati" />}>
         <Layout
           css={{ flexDirection: 'column', margin: '0 12px', width: '100%' }}
         >
@@ -22,42 +22,42 @@ class MainPageTemplate extends Component {
           <TextWidgetContainer>
             <TextWidget
               title="Nabídka studia"
-              text="Lorem Ipsum Dolor Sit Amet"
+              text="Vyber si z bohaté nabídky studijních programů a oborů"
               number="1"
             />
             <TextWidget
-              title="Lorem Ipsum"
-              text="Lorem Ipsum Dolor Sit Amet"
+              title="Atraktivní prostředí"
+              text="Vzdělávej se v moderním a špičkově vybeveném prostředí"
               number="2"
             />
             <TextWidget
-              title="Lorem Ipsum"
-              text="Lorem Ipsum Dolor Sit Amet"
+              title="Výjezdy do zahraničí"
+              text="Využij široké možnosti studia a praxxe v zahraničí!"
               number="3"
             />
             <TextWidget
-              title="Lorem Ipsum"
-              text="Lorem Ipsum Dolor Sit Amet"
+              title="Praxe ve firmách"
+              text="Získavej cenné zkušenosti z praxe již během studia"
               number="4"
             />
             <TextWidget
-              title="Lorem Ipsum"
-              text="Lorem Ipsum Dolor Sit Amet"
+              title="Job Centrum"
+              text="Využij soustavné kariérní poradenství po dobu studia"
               number="5"
             />
             <TextWidget
-              title="Lorem Ipsum"
-              text="Lorem Ipsum Dolor Sit Amet"
+              title="Akademická poradna"
+              text="Spolehni se v náročných situacích na odborníky"
               number="6"
             />
             <TextWidget
-              title="Lorem Ipsum"
-              text="Lorem Ipsum Dolor Sit Amet"
+              title="Studentské projekty"
+              text="Zapoj se do široé škály studentských aktivit"
               number="7"
             />
             <TextWidget
-              title="Lorem Ipsum"
-              text="Lorem Ipsum Dolor Sit Amet"
+              title="Zábava a sport"
+              text="Užij si vysokoškolský společenský život naplno"
               number="8"
             />
           </TextWidgetContainer>
@@ -67,4 +67,4 @@ class MainPageTemplate extends Component {
   }
 }
 
-export default MainPageTemplate;
+export default UniversityPageTemplate;

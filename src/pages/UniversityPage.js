@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import MainPageTemplate from '../templates/MainPageTemplate';
+import UniversityPageTemplate from '../templates/UniversityPageTemplate';
 
 class UniversityPage extends Component {
   render() {
-    return <MainPageTemplate />;
+    return <UniversityPageTemplate />;
   }
 }
 

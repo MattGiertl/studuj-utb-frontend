@@ -6,7 +6,6 @@ import Paragraph from '../atoms/Paragraph';
 const Widget = ({
   count,
   title,
-  sm,
   widgetWidth = '100%',
   widgetHeight = '80px',
 }) => (
@@ -37,11 +36,7 @@ const Widget = ({
       >
         {count}
       </Paragraph>
-      <Paragraph
-        css={{ marginTop: 'auto', marginLeft: '5px', marginBottom: '5px' }}
-      >
-        {title}
-      </Paragraph>
+      <Paragraph css={{ margin: 'auto auto 5px 5px' }}>{title}</Paragraph>
     </Layout>
   </Layout>
 );
