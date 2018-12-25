@@ -9,7 +9,7 @@ const Widget = ({ count, title, sm }) => (
       width: sm ? '48%' : '100%',
       height: '80px',
       background: '#FF590B',
-      borderBottom: '4px solid gray',
+      borderBottom: '4px solid orange',
       borderRadius: '4px',
       color: 'white',
     }}
