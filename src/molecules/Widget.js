@@ -3,11 +3,16 @@ import { jsx } from '@emotion/core';
 import Layout from '../atoms/Layout';
 import Paragraph from '../atoms/Paragraph';
 
-const Widget = ({ count, title, sm }) => (
+const Widget = ({
+  count,
+  title,
+  widgetWidth = '100%',
+  widgetHeight = '80px',
+}) => (
   <Layout
     css={{
-      width: sm ? '48%' : '100%',
-      height: '80px',
+      width: widgetWidth,
+      height: widgetHeight,
       background: '#FF590B',
       borderBottom: '4px solid orange',
       borderRadius: '4px',
@@ -19,6 +24,7 @@ const Widget = ({ count, title, sm }) => (
         margin: '0 10px',
         flexDirection: 'column',
         justifyContent: 'center',
+        alignItems: 'center',
         width: '100%',
       }}
     >
@@ -30,11 +36,7 @@ const Widget = ({ count, title, sm }) => (
       >
         {count}
       </Paragraph>
-      <Paragraph
-        css={{ marginTop: 'auto', marginLeft: '5px', marginBottom: '5px' }}
-      >
-        {title}
-      </Paragraph>
+      <Paragraph css={{ margin: 'auto auto 5px 5px' }}>{title}</Paragraph>
     </Layout>
   </Layout>
 );
