@@ -6,7 +6,7 @@ import { jsx } from '@emotion/core';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
 import Paragraph from '../atoms/Paragraph';
-import Icon from '../atoms/Icon';
+import Icon from '../atoms/Icon/Icon';
 
 const Wrapper = styled.div({
   display: 'block',

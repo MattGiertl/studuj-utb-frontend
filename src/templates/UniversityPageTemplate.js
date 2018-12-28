@@ -10,12 +10,32 @@ import TextWidget from '../organisms/TextWidget';
 import TextWidgetContainer from '../organisms/TextWidgetContainer';
 import PageFooter from '../organisms/PageFooter';
 import Layout from '../atoms/Layout';
+import { UtbIcon } from '../atoms/Icon/Icon';
+import Paragraph from '../atoms/Paragraph';
 
 class UniversityPageTemplate extends Component {
   render() {
     return (
       <PageLayoutWrapper
-        header={<PageHeader middle="Univerzita Tomáše Bati" />}
+        header={
+          <PageHeader
+            left={<UtbIcon />}
+            middle={
+              <Paragraph css={{ margin: 0, padding: 0 }} fontWeight="bold">
+                Univerzita Tomáše Bati
+              </Paragraph>
+            }
+            right={
+              <Paragraph
+                css={{ margin: 0, pading: 0, marginBottom: '10px' }}
+                fontWeight="bold"
+                fontSize="25px"
+              >
+                ...
+              </Paragraph>
+            }
+          />
+        }
         footer={<PageFooter />}
       >
         <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>

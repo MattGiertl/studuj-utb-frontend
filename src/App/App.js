@@ -9,9 +9,17 @@ import {
   faUserGraduate,
   faImages,
   faUtensils,
+  faChevronLeft,
 } from '@fortawesome/free-solid-svg-icons';
 
-library.add(faUniversity, faBook, faUserGraduate, faImages, faUtensils);
+library.add(
+  faUniversity,
+  faBook,
+  faUserGraduate,
+  faImages,
+  faUtensils,
+  faChevronLeft,
+);
 
 class App extends Component {
   render() {
