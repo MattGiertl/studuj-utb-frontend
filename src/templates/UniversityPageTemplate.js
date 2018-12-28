@@ -2,7 +2,6 @@
 import { Component } from 'react';
 import { jsx } from '@emotion/core';
 import PageLayoutWrapper from '../atoms/PageLayoutWrapper';
-import Paragraph from '../atoms/Paragraph';
 
 import PageHeader from '../organisms/PageHeader';
 import WidgetContainer from '../organisms/WidgetContainer';
@@ -13,8 +12,6 @@ import PageFooter from '../organisms/PageFooter';
 import Layout from '../atoms/Layout';
 
 class UniversityPageTemplate extends Component {
-  renderNabidkaInfo = () => <Paragraph>Nabidka studia!</Paragraph>;
-
   render() {
     return (
       <PageLayoutWrapper

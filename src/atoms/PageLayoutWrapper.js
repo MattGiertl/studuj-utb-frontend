@@ -3,7 +3,7 @@ import { jsx } from '@emotion/core';
 import styled from '@emotion/styled';
 import Layout from '../atoms/Layout';
 
-const Wrapper = styled.div(props => ({
+const Wrapper = styled.div(() => ({
   display: 'flex',
   flexDirection: 'column',
   textAlign: 'center',
