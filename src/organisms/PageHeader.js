@@ -1,5 +1,7 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
+
+// eslint-disable-next-line
 import React, { Component } from 'react';
 
 import Ribbon from '../atoms/Ribbon';

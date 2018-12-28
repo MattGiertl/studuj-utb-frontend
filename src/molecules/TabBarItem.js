@@ -1,8 +1,12 @@
-import React, { HTMLAttributes, SFC } from 'react';
+// eslint-disable-next-line
+import React, { Component } from 'react';
+
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import { NavLink } from 'react-router-dom';
 import styled from '@emotion/styled';
-import * as H from 'history';
 import Paragraph from '../atoms/Paragraph';
+import Icon from '../atoms/Icon';
 
 const Wrapper = styled.div({
   display: 'block',
@@ -11,6 +15,7 @@ const Wrapper = styled.div({
   cursor: 'pointer',
   textDecoration: 'none',
   textOverflow: 'ellipsis',
+  alignItems: 'center',
   whiteSpace: 'nowrap',
   overflow: 'hidden',
   textAlign: 'center',
@@ -24,19 +29,19 @@ const NavLinkWrapper = Wrapper.withComponent(NavLink);
 
 const IconWithLabel = ({ icon, label }) => (
   <>
-    {icon && <Icon name={icon} color="inherit" />}
-    <Paragraph css={{ margin: 0, padding: 0 }}>{label}</Paragraph>
+    {icon && <Icon size="lg" iconName={icon} />}
+    <Paragraph
+      fontSize="0.9rem"
+      textAlign="center"
+      color="black"
+      css={{ margin: 0, paddingTop: '4px' }}
+    >
+      {label}
+    </Paragraph>
   </>
 );
 
-const TabBarItem = ({
-  icon,
-  label,
-  to,
-  exact,
-  strict,
-  ...rest
-}) => {
+const TabBarItem = ({ icon, label, to, exact, strict, ...rest }) => {
   if (to) {
     return (
       <NavLinkWrapper to={to} exact={exact} strict={strict} {...rest}>

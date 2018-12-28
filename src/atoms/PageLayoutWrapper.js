@@ -1,5 +1,6 @@
+/** @jsx jsx */
+import { jsx } from '@emotion/core';
 import styled from '@emotion/styled';
-import React from 'react';
 import Layout from '../atoms/Layout';
 
 const Wrapper = styled.div(props => ({
@@ -16,7 +17,7 @@ const PageLayoutWrapper = ({
   ...props
 }) => (
   <Wrapper {...props}>
-    <Layout css={{ background: backgroundCol }}>{header}</Layout>
+    <Layout>{header}</Layout>
     <Layout
       css={{
         background: backgroundCol,
@@ -27,7 +28,16 @@ const PageLayoutWrapper = ({
     >
       {children}
     </Layout>
-    <Layout css={{ background: backgroundCol }}>{footer}</Layout>
+    <Layout
+      css={{
+        background: backgroundCol,
+        position: 'fixed',
+        bottom: 0,
+        width: '100%',
+      }}
+    >
+      {footer}
+    </Layout>
   </Wrapper>
 );
 

@@ -1,37 +1,36 @@
+// eslint-disable-next-line
+import React, { Component } from 'react';
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import React, { Component } from 'react';
 import TabBar from './Tabbar';
+import TabBarItem from '../molecules/TabBarItem';
 
-class PageFooterBase extends Component {
+class PageFooter extends Component {
   render() {
     // const isIphoneX = isIos() && isIphoneXDisplay();
     const { children } = this.props;
     return (
       <>
         {children}
-        <TabBar paddingBottom={isIphoneX ? '20' : '0'} xl={isIphoneX}>
+        <TabBar>
           <TabBarItem
-            label="Lorem"
-            icon="home"
+            label="Univerzita"
+            icon="university"
             exact
             to="/"
             id="homeTab"
           />
           <TabBarItem
-            label="Ipsum"
-            icon="calendar"
-            to={calendarLinkTo}
+            label="Studium"
+            icon="user-graduate"
             id="calendarTab"
+            to="/other"
           />
-          <TabBarItem
-            to="Dolor"
-            label={intl.formatMessage(messages.moreParagraph)}
-            icon="more"
-            id="moreTab"
-          />
+          <TabBarItem to="/stuff" label="Knihovna" icon="book" id="moreTab" />
         </TabBar>
       </>
     );
   }
 }
+
+export default PageFooter;
