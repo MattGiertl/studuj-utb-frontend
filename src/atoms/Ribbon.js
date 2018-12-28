@@ -1,19 +1,16 @@
 import styled from '@emotion/styled';
 
 const Ribbon = styled.div(props => ({
-  height: props.height ? props.height : '2.5rem',
-  color: 'white',
-  background: '#FF590B',
   boxSizing: 'border-box',
   width: '100%',
-  fontSize: '1rem',
+  fontSize: '0.9rem',
   display: 'flex',
-  flexDirection: 'row',
   justifyContent: 'center',
   alignItems: 'center',
   position: 'relative',
-  borderStyle: 'solid',
-  borderWidth: 0,
+  minHeight: '50px',
+  color: 'white',
+  background: props.orange ? '#FF590B' : 'white',
 }));
 
 export default Ribbon;

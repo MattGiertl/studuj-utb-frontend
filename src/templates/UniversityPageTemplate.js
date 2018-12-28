@@ -2,26 +2,23 @@
 import { Component } from 'react';
 import { jsx } from '@emotion/core';
 import PageLayoutWrapper from '../atoms/PageLayoutWrapper';
-import Paragraph from '../atoms/Paragraph';
 
-import Layout from '../atoms/Layout';
 import PageHeader from '../organisms/PageHeader';
 import WidgetContainer from '../organisms/WidgetContainer';
 import UnderlinedHeading from '../molecules/UnderlinedHeading';
 import TextWidget from '../organisms/TextWidget';
 import TextWidgetContainer from '../organisms/TextWidgetContainer';
+import PageFooter from '../organisms/PageFooter';
+import Layout from '../atoms/Layout';
 
 class UniversityPageTemplate extends Component {
-  renderNabidkaInfo = () => <Paragraph>Nabidka studia!</Paragraph>;
-
   render() {
     return (
       <PageLayoutWrapper
         header={<PageHeader middle="Univerzita Tomáše Bati" />}
+        footer={<PageFooter />}
       >
-        <Layout
-          css={{ flexDirection: 'column', margin: '0 12px', width: '100%' }}
-        >
+        <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>
           <WidgetContainer />
           <UnderlinedHeading title="Proč studovat na UTB?" />
           <TextWidgetContainer>

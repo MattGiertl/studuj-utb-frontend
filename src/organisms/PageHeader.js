@@ -1,18 +1,20 @@
 /** @jsx jsx */
 import { jsx } from '@emotion/core';
-import React from 'react';
+
+// eslint-disable-next-line
+import React, { Component } from 'react';
 
 import Ribbon from '../atoms/Ribbon';
 import Layout from '../atoms/Layout';
 
-class PageHeader extends React.Component {
+class PageHeader extends Component {
   backButtonClickedHandler = () => window.history.back();
 
   render() {
     const { backButton, left, middle, right, children } = this.props;
     return (
       <>
-        <Ribbon>
+        <Ribbon orange>
           <Layout
             css={{
               alignItems: 'center',
