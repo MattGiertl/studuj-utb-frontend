@@ -10,6 +10,8 @@ import {
   faImages,
   faUtensils,
   faChevronLeft,
+  faChevronDown,
+  faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons';
 
 library.add(
@@ -19,6 +21,8 @@ library.add(
   faImages,
   faUtensils,
   faChevronLeft,
+  faChevronDown,
+  faInfoCircle,
 );
 
 class App extends Component {
