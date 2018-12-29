@@ -10,12 +10,41 @@ import TextWidget from '../organisms/TextWidget';
 import TextWidgetContainer from '../organisms/TextWidgetContainer';
 import PageFooter from '../organisms/PageFooter';
 import Layout from '../atoms/Layout';
+import { UtbIcon } from '../atoms/Icon/Icon';
+import Paragraph from '../atoms/Paragraph';
+import { NavLink } from 'react-router-dom';
 
 class UniversityPageTemplate extends Component {
   render() {
     return (
       <PageLayoutWrapper
-        header={<PageHeader middle="Univerzita Tomáše Bati" />}
+        header={
+          <PageHeader
+            left={<UtbIcon />}
+            middle={
+              <Paragraph fontWeight="bold">
+                Univerzita Tomáše Bati
+              </Paragraph>
+            }
+            right={
+              <NavLink
+                css={{
+                  margin: 0,
+                  pading: 0,
+                  marginBottom: '10px',
+                  textDecoration: 'none',
+                  border: 'none',
+                  fontWeight: 'bold',
+                  fontSize: '25px',
+                  color: 'white',
+                }}
+                to="about"
+              >
+                ...
+              </NavLink>
+            }
+          />
+        }
         footer={<PageFooter />}
       >
         <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>

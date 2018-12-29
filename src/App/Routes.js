@@ -11,6 +11,7 @@ import JobCentrumInfoTemplate from '../templates/JobCentrumInfoTemplate';
 import AcademicCounselTemplate from '../templates/AcademicCounselTemplate';
 import StudentProjectsInfoPage from '../pages/StudentProjectsInfoPage';
 import SportInfoPage from '../pages/SportInfoPage';
+import AboutPage from '../pages/AboutPage';
 
 const Routes = () => (
   <HashRouter>
@@ -37,6 +38,7 @@ const Routes = () => (
         component={StudentProjectsInfoPage}
       />
       <Route exact path="/zabava-a-sport" component={SportInfoPage} />
+      <Route exact path="/about" component={AboutPage} />
       <Route component={NotFoundPage} />
     </Switch>
   </HashRouter>

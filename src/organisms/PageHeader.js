@@ -6,6 +6,7 @@ import React, { Component } from 'react';
 
 import Ribbon from '../atoms/Ribbon';
 import Layout from '../atoms/Layout';
+import Icon from '../atoms/Icon/Icon';
 
 class PageHeader extends Component {
   backButtonClickedHandler = () => window.history.back();
@@ -36,13 +37,13 @@ class PageHeader extends Component {
                   alignItems: 'center',
                 }}
               >
-                Back
+                <Icon iconName="chevron-left" size="lg" />
               </Layout>
             ) : (
               left
             )}
           </Layout>
-          <Layout css={{ flex: 2, justifyContent: 'center', fontSize: '1rem' }}>
+          <Layout css={{ flex: 3, justifyContent: 'center', fontSize: '1rem' }}>
             {middle}
           </Layout>
           <Layout
