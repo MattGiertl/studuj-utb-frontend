@@ -12,6 +12,7 @@ import PageFooter from '../organisms/PageFooter';
 import Layout from '../atoms/Layout';
 import { UtbIcon } from '../atoms/Icon/Icon';
 import Paragraph from '../atoms/Paragraph';
+import { NavLink } from 'react-router-dom';
 
 class UniversityPageTemplate extends Component {
   render() {
@@ -21,18 +22,26 @@ class UniversityPageTemplate extends Component {
           <PageHeader
             left={<UtbIcon />}
             middle={
-              <Paragraph css={{ margin: 0, padding: 0 }} fontWeight="bold">
+              <Paragraph fontWeight="bold">
                 Univerzita Tomáše Bati
               </Paragraph>
             }
             right={
-              <Paragraph
-                css={{ margin: 0, pading: 0, marginBottom: '10px' }}
-                fontWeight="bold"
-                fontSize="25px"
+              <NavLink
+                css={{
+                  margin: 0,
+                  pading: 0,
+                  marginBottom: '10px',
+                  textDecoration: 'none',
+                  border: 'none',
+                  fontWeight: 'bold',
+                  fontSize: '25px',
+                  color: 'white',
+                }}
+                to="about"
               >
                 ...
-              </Paragraph>
+              </NavLink>
             }
           />
         }
