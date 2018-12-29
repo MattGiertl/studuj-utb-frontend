@@ -10,6 +10,8 @@ import PageFooter from '../organisms/PageFooter';
 import UnderlinedHeading from '../molecules/UnderlinedHeading';
 import Layout from '../atoms/Layout';
 import FacultyMenuWidget from '../organisms/FacultyMenuWidget';
+import FieldOfStudy from '../molecules/FieldOfStudy';
+import FieldsOfStudyContainer from '../atoms/FieldsOfStudyContainer';
 
 class StudyTemplate extends Component {
   render() {
@@ -49,6 +51,13 @@ class StudyTemplate extends Component {
               facultyName="Fakulta technologická"
               facultyShortcut="ft"
             />
+            <FieldsOfStudyContainer>
+              <FieldOfStudy
+                facultyShortcut="ft"
+                title="Food Chemistry and Technology, EN"
+                additionalInfo="Kombinovaná, Doktorský"
+              />
+            </FieldsOfStudyContainer>
             <FacultyMenuWidget
               facultyName="Fakulta managementu a ekonomiky"
               facultyShortcut="fame"
