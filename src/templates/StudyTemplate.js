@@ -19,9 +19,15 @@ class StudyTemplate extends Component {
       showTechnologyFields,
       showManagementFields,
       showMultimediaFields,
+      showHumanitiesFields,
       showInformaticsFields,
       showLogisticsFields,
       toggleTechnologyFields,
+      toggleHumanitiesFields,
+      toggleManagementFields,
+      toggleInformaticsFields,
+      toggleLogisticsFields,
+      toggleMultimediaFields,
     } = this.props;
     return (
       <PageLayoutWrapper
@@ -81,25 +87,45 @@ class StudyTemplate extends Component {
             )}
 
             <FacultyMenuWidget
+              toggleField={toggleManagementFields}
               facultyName="Fakulta managementu a ekonomiky"
               facultyShortcut="fame"
             />
+            {showManagementFields && (
+              <FieldsOfStudyContainer>Management</FieldsOfStudyContainer>
+            )}
             <FacultyMenuWidget
+              toggleMultimediaFields={toggleMultimediaFields}
               facultyName="Fakulta multimediálních komunikací"
               facultyShortcut="fmk"
             />
+            {showMultimediaFields && (
+              <FieldsOfStudyContainer>Multimedia</FieldsOfStudyContainer>
+            )}
             <FacultyMenuWidget
+              toggleField={toggleHumanitiesFields}
               facultyName="Fakulta humanitních studií"
               facultyShortcut="fhs"
             />
+            {showHumanitiesFields && (
+              <FieldsOfStudyContainer>Humanity</FieldsOfStudyContainer>
+            )}
             <FacultyMenuWidget
+              toggleField={toggleInformaticsFields}
               facultyName="Fakulta aplikované informatiky"
               facultyShortcut="fai"
             />
+            {showInformaticsFields && (
+              <FieldsOfStudyContainer>Informatics</FieldsOfStudyContainer>
+            )}
             <FacultyMenuWidget
+              toggleField={toggleLogisticsFields}
               facultyName="Fakulta logistiky a krizového řešení"
               facultyShortcut="flkr"
             />
+            {showLogisticsFields && (
+              <FieldsOfStudyContainer>Logistics</FieldsOfStudyContainer>
+            )}
           </Layout>
         </Layout>
       </PageLayoutWrapper>
