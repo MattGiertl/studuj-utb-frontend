@@ -15,6 +15,14 @@ import FieldsOfStudyContainer from '../atoms/FieldsOfStudyContainer';
 
 class StudyTemplate extends Component {
   render() {
+    const {
+      showTechnologyFields,
+      showManagementFields,
+      showMultimediaFields,
+      showInformaticsFields,
+      showLogisticsFields,
+      toggleTechnologyFields,
+    } = this.props;
     return (
       <PageLayoutWrapper
         header={
@@ -48,16 +56,30 @@ class StudyTemplate extends Component {
           <UnderlinedHeading title="Studijní obory podle fakult" />
           <Layout css={{ flexDirection: 'column', marginBottom: '50px' }}>
             <FacultyMenuWidget
+              toggleField={toggleTechnologyFields}
               facultyName="Fakulta technologická"
               facultyShortcut="ft"
             />
-            <FieldsOfStudyContainer>
-              <FieldOfStudy
-                facultyShortcut="ft"
-                title="Food Chemistry and Technology, EN"
-                additionalInfo="Kombinovaná, Doktorský"
-              />
-            </FieldsOfStudyContainer>
+            {showTechnologyFields && (
+              <FieldsOfStudyContainer>
+                <FieldOfStudy
+                  facultyShortcut="ft"
+                  title="Chemie a technologie materiálů"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="ft"
+                  title="Chemie a technologie potravin"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="ft"
+                  title="Procesní inženýrství"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+              </FieldsOfStudyContainer>
+            )}
+
             <FacultyMenuWidget
               facultyName="Fakulta managementu a ekonomiky"
               facultyShortcut="fame"

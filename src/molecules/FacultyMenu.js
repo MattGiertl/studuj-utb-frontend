@@ -5,7 +5,7 @@ import Icon from '../atoms/Icon/Icon';
 import Paragraph from '../atoms/Paragraph';
 import FacultyMenuItem from './FacultyMenuItem';
 
-const FacultyMenu = () => (
+const FacultyMenu = ({toggleField}) => (
   <Layout
     css={{
       height: '30px',
@@ -14,7 +14,7 @@ const FacultyMenu = () => (
       marginBottom: '10px',
     }}
   >
-    <FacultyMenuItem>
+    <FacultyMenuItem toggleField={toggleField}>
       <Icon iconName="chevron-down" color="gray" />
       <Paragraph color="#808080">Zobrazit obory</Paragraph>
     </FacultyMenuItem>
