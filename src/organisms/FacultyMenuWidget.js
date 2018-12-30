@@ -4,13 +4,14 @@ import FacultyWidget from '../molecules/FacultyWidget';
 import Layout from '../atoms/Layout';
 import FacultyMenu from '../molecules/FacultyMenu';
 
-const FacultyMenuWidget = ({ facultyName, facultyShortcut }) => (
+const FacultyMenuWidget = ({ facultyName, facultyShortcut, toggleField }) => (
   <Layout css={{ flexDirection: 'column' }}>
     <FacultyWidget
+      toggleField={toggleField}
       facultyName={facultyName}
       facultyShortcut={facultyShortcut}
     />
-    <FacultyMenu />
+    <FacultyMenu toggleField={toggleField} />
   </Layout>
 );
 
