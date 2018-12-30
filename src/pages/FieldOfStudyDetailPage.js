@@ -14,7 +14,6 @@ class FieldOfStudyDetailPage extends Component {
 
   componentWillMount() {
     const { fieldOfStudy } = this.state;
-
     switch (fieldOfStudy) {
       case 'ctp':
         this.setState({
@@ -240,10 +239,6 @@ class FieldOfStudyDetailPage extends Component {
       default:
         break;
     }
-  }
-
-  componentDidMount() {
-    console.log(this.state.fieldOfStudy);
   }
 
   render() {

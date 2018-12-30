@@ -11,7 +11,7 @@ const FacultyMenuWidget = ({ facultyName, facultyShortcut, toggleField }) => (
       facultyName={facultyName}
       facultyShortcut={facultyShortcut}
     />
-    <FacultyMenu toggleField={toggleField} />
+    <FacultyMenu facultyShortcut={facultyShortcut} toggleField={toggleField} />
   </Layout>
 );
 

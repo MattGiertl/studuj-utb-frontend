@@ -14,6 +14,7 @@ import SportInfoPage from '../pages/SportInfoPage';
 import AboutPage from '../pages/AboutPage';
 import StudyPage from '../pages/StudyPage';
 import FieldOfStudyDetailPage from '../pages/FieldOfStudyDetailPage';
+import FacultyInfoPage from '../pages/FacultyInfoPage';
 
 const Routes = () => (
   <HashRouter>
@@ -47,6 +48,7 @@ const Routes = () => (
         path="/study/study-field/:fieldName"
         component={FieldOfStudyDetailPage}
       />
+      <Route exact path="/study/faculty/:facultyName" component={FacultyInfoPage} />
       <Route component={NotFoundPage} />
     </Switch>
   </HashRouter>
