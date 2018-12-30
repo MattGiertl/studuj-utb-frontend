@@ -3,11 +3,13 @@ import { jsx } from '@emotion/core';
 import Layout from '../atoms/Layout';
 import Paragraph from '../atoms/Paragraph';
 import Icon from '../atoms/Icon/Icon';
+import { Redirect } from 'react-router-dom';
 
 const Widget = ({
   count,
   title,
   iconName,
+  linkTo,
   widgetWidth = '100%',
   widgetHeight = '80px',
 }) => (
@@ -30,7 +32,7 @@ const Widget = ({
         width: '100%',
       }}
     >
-      {count ? (
+      {!linkTo ? (
         <Paragraph
           fontWeight="bold"
           fontSize="1.5rem"
@@ -40,7 +42,9 @@ const Widget = ({
           {count}
         </Paragraph>
       ) : (
-        <Icon size="3x" iconName={iconName} marginTop="7px" />
+        <a href={linkTo} css={{ textDecoration: 'none', color: 'white' }}>
+          <Icon size="3x" iconName={iconName} marginTop="7px" />
+        </a>
       )}
 
       <Paragraph css={{ margin: 'auto auto 5px 5px' }}>{title}</Paragraph>

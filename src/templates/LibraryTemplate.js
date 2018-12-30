@@ -10,6 +10,7 @@ import WidgetContainer from '../organisms/WidgetContainer';
 import Layout from '../atoms/Layout';
 import UnderlinedHeading from '../molecules/UnderlinedHeading';
 import Widget from '../molecules/Widget';
+import PageFooter from '../organisms/PageFooter';
 
 class LibraryTemplate extends Component {
   render() {
@@ -40,9 +41,17 @@ class LibraryTemplate extends Component {
             }
           />
         }
+        footer={<PageFooter />}
       >
         <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>
-          <WidgetContainer />
+          <WidgetContainer
+            upperCount="110 000"
+            upperTitle="Počet knih"
+            leftCount="500"
+            leftTitle="Počet míst"
+            rightCount="500"
+            rightTitle="Počet počítačů"
+          />
           <UnderlinedHeading title="Služby knihovny" />
           <Paragraph color="black" css={{ margin: 0 }} fontSize="0.8rem">
             Knihovna UTB sídlí v objektu U13. Své služby poskytuje studentům a
@@ -75,9 +84,25 @@ class LibraryTemplate extends Component {
             na webu nakladatelstvi.utb.cz
           </Paragraph>
           <UnderlinedHeading title="Knihovna na sítích" />
-          <Layout css={{ margin: '10px 0', justifyContent: 'space-between' }}>
-            <Widget title="Facebook" iconName={['fab', 'facebook-f']} widgetWidth="48%" />
-            <Widget title="Twitter" iconName={['fab', 'twitter']} widgetWidth="48%" />
+          <Layout
+            css={{
+              margin: '10px 0',
+              justifyContent: 'space-between',
+              marginBottom: '55px',
+            }}
+          >
+            <Widget
+              linkTo="https://www.facebook.com/knihovnautb/"
+              title="Facebook"
+              iconName={['fab', 'facebook-f']}
+              widgetWidth="48%"
+            />
+            <Widget
+              linkTo="https://twitter.com/knihovnautb?lang=en"
+              title="Twitter"
+              iconName={['fab', 'twitter']}
+              widgetWidth="48%"
+            />
           </Layout>
         </Layout>
       </PageLayoutWrapper>

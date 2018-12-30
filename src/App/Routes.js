@@ -50,7 +50,7 @@ const Routes = () => (
         component={FieldOfStudyDetailPage}
       />
       <Route exact path="/study/faculty/:facultyName" component={FacultyInfoPage} />
-      <Route exact path="/knihovna" component={LibraryPage} />
+      <Route path="/knihovna" component={LibraryPage} />
       <Route component={NotFoundPage} />
     </Switch>
   </HashRouter>

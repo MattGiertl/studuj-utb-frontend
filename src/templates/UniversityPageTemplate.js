@@ -48,7 +48,7 @@ class UniversityPageTemplate extends Component {
         footer={<PageFooter />}
       >
         <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>
-          <WidgetContainer />
+          <WidgetContainer upperCount="10 000" upperTitle="Počet studentů" leftCount="6" leftTitle="Počet fakult" rightCount="111" rightTitle="Počet oborů" />
           <UnderlinedHeading title="Proč studovat na UTB?" />
           <TextWidgetContainer>
             <TextWidget
