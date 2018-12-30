@@ -3,8 +3,9 @@ import { jsx } from '@emotion/core';
 import Layout from '../atoms/Layout';
 import Paragraph from '../atoms/Paragraph';
 import Icon from '../atoms/Icon/Icon';
+import { NavLink } from 'react-router-dom';
 
-const FieldOfStudy = ({ facultyShortcut, title, additionalInfo }) => {
+const FieldOfStudy = ({ facultyShortcut, title, additionalInfo, to }) => {
   let backgroundColor = '#FF590B';
   switch (facultyShortcut) {
     case 'ft':
@@ -30,51 +31,53 @@ const FieldOfStudy = ({ facultyShortcut, title, additionalInfo }) => {
   }
 
   return (
-    <Layout
-      css={{
-        height: '40px',
-        padding: '10px 0',
-        marginBottom: '5px',
-        borderBottom: '1px solid gray',
-      }}
-    >
-      <Layout css={{ background: backgroundColor, width: '5px' }} />
+    <NavLink to={`/study/study-field/${to}`} css={{ textDecoration: 'none' }}>
       <Layout
         css={{
-          flexDirection: 'column',
-          marginLeft: '10px',
-          height: '100%',
-          justifyContent: 'center',
+          height: '40px',
+          padding: '10px 0',
+          marginBottom: '5px',
+          borderBottom: '1px solid gray',
         }}
       >
-        <Paragraph
-          css={{ margin: 0, padding: 0 }}
-          color="black"
-          fontSize="0.8rem"
+        <Layout css={{ background: backgroundColor, width: '5px' }} />
+        <Layout
+          css={{
+            flexDirection: 'column',
+            marginLeft: '10px',
+            height: '100%',
+            justifyContent: 'center',
+          }}
         >
-          {title}
-        </Paragraph>
-        <Paragraph
-          css={{ margin: 0, padding: 0 }}
-          color="gray"
-          fontSize="0.8rem"
+          <Paragraph
+            css={{ margin: 0, padding: 0 }}
+            color="black"
+            fontSize="0.8rem"
+          >
+            {title}
+          </Paragraph>
+          <Paragraph
+            css={{ margin: 0, padding: 0 }}
+            color="gray"
+            fontSize="0.8rem"
+          >
+            {additionalInfo}
+          </Paragraph>
+        </Layout>
+        <Layout
+          css={{
+            height: '100%',
+            alignItems: 'center',
+            marginLeft: 'auto',
+            marginRight: '10px',
+            borderLeft: '0.001em solid gray',
+            paddingLeft: '10px',
+          }}
         >
-          {additionalInfo}
-        </Paragraph>
+          <Icon color="gray" iconName="chevron-right" />
+        </Layout>
       </Layout>
-      <Layout
-        css={{
-          height: '100%',
-          alignItems: 'center',
-          marginLeft: 'auto',
-          marginRight: '10px',
-          borderLeft: '0.001em solid gray',
-          paddingLeft: '10px',
-        }}
-      >
-        <Icon color="gray" iconName="chevron-right" />
-      </Layout>
-    </Layout>
+    </NavLink>
   );
 };
 

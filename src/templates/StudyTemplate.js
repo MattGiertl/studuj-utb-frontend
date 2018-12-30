@@ -58,7 +58,13 @@ class StudyTemplate extends Component {
         }
         footer={<PageFooter />}
       >
-        <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>
+        <Layout
+          css={{
+            flexDirection: 'column',
+            marginBottom: '50px',
+            margin: '12px',
+          }}
+        >
           <UnderlinedHeading title="Studijní obory podle fakult" />
           <Layout css={{ flexDirection: 'column', marginBottom: '50px' }}>
             <FacultyMenuWidget
@@ -69,16 +75,19 @@ class StudyTemplate extends Component {
             {showTechnologyFields && (
               <FieldsOfStudyContainer>
                 <FieldOfStudy
-                  facultyShortcut="ft"
-                  title="Chemie a technologie materiálů"
-                  additionalInfo="Prezenční, bakalářský"
-                />
-                <FieldOfStudy
+                  to="ctp"
                   facultyShortcut="ft"
                   title="Chemie a technologie potravin"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="ctm"
+                  facultyShortcut="ft"
+                  title="Chemie a technologie materiálů"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  to="pci"
                   facultyShortcut="ft"
                   title="Procesní inženýrství"
                   additionalInfo="Prezenční, bakalářský"
@@ -94,16 +103,19 @@ class StudyTemplate extends Component {
             {showManagementFields && (
               <FieldsOfStudyContainer>
                 <FieldOfStudy
+                  to="ekm"
                   facultyShortcut="fame"
                   title="Ekonomika a management"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="ucd"
                   facultyShortcut="fame"
                   title="Účetnictví a daně"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="hps"
                   facultyShortcut="fame"
                   title="Hospodářská politika a správa"
                   additionalInfo="Prezenční, bakalářský"
@@ -119,11 +131,13 @@ class StudyTemplate extends Component {
             {showMultimediaFields && (
               <FieldsOfStudyContainer>
                 <FieldOfStudy
+                  to="mks"
                   facultyShortcut="fmk"
                   title="Mediální a komunikační studia"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="vyu"
                   facultyShortcut="fmk"
                   title="Výtvarná umění"
                   additionalInfo="Prezenční, bakalářský"
@@ -139,16 +153,19 @@ class StudyTemplate extends Component {
             {showHumanitiesFields && (
               <FieldsOfStudyContainer>
                 <FieldOfStudy
+                  to="fll"
                   facultyShortcut="fhs"
                   title="Filologie"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="ose"
                   facultyShortcut="fhs"
                   title="Ošetřování"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="ped"
                   facultyShortcut="fhs"
                   title="Pedagogika"
                   additionalInfo="Prezenční, bakalářský"
@@ -164,16 +181,19 @@ class StudyTemplate extends Component {
             {showInformaticsFields && (
               <FieldsOfStudyContainer>
                 <FieldOfStudy
+                  to="swi"
                   facultyShortcut="fai"
                   title="Softwarové inženýrství"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="irt"
                   facultyShortcut="fai"
                   title="Informatické a řídící technologie"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="btsm"
                   facultyShortcut="fai"
                   title="Bezpečnostní technologie, systémy a management"
                   additionalInfo="Prezenční, bakalářský"
@@ -189,16 +209,19 @@ class StudyTemplate extends Component {
             {showLogisticsFields && (
               <FieldsOfStudyContainer>
                 <FieldOfStudy
+                  to="bsp"
                   facultyShortcut="flkr"
                   title="Bezpečnost společnosti"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="ocb"
                   facultyShortcut="flkr"
                   title="Ochrana obyvatelstva"
                   additionalInfo="Prezenční, bakalářský"
                 />
                 <FieldOfStudy
+                  to="pri"
                   facultyShortcut="flkr"
                   title="Procesní inženýrství"
                   additionalInfo="Prezenční, bakalářský"
