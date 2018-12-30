@@ -15,6 +15,7 @@ import AboutPage from '../pages/AboutPage';
 import StudyPage from '../pages/StudyPage';
 import FieldOfStudyDetailPage from '../pages/FieldOfStudyDetailPage';
 import FacultyInfoPage from '../pages/FacultyInfoPage';
+import LibraryPage from '../pages/LibraryPage';
 
 const Routes = () => (
   <HashRouter>
@@ -49,6 +50,7 @@ const Routes = () => (
         component={FieldOfStudyDetailPage}
       />
       <Route exact path="/study/faculty/:facultyName" component={FacultyInfoPage} />
+      <Route exact path="/knihovna" component={LibraryPage} />
       <Route component={NotFoundPage} />
     </Switch>
   </HashRouter>

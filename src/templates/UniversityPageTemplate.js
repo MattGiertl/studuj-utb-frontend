@@ -44,7 +44,7 @@ class UniversityPageTemplate extends Component {
               </NavLink>
             }
           />
-        }
+      }
         footer={<PageFooter />}
       >
         <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>
