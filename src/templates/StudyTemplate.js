@@ -92,7 +92,23 @@ class StudyTemplate extends Component {
               facultyShortcut="fame"
             />
             {showManagementFields && (
-              <FieldsOfStudyContainer>Management</FieldsOfStudyContainer>
+              <FieldsOfStudyContainer>
+                <FieldOfStudy
+                  facultyShortcut="fame"
+                  title="Ekonomika a management"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="fame"
+                  title="Účetnictví a daně"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="fame"
+                  title="Hospodářská politika a správa"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+              </FieldsOfStudyContainer>
             )}
             <FacultyMenuWidget
               toggleMultimediaFields={toggleMultimediaFields}
@@ -100,7 +116,18 @@ class StudyTemplate extends Component {
               facultyShortcut="fmk"
             />
             {showMultimediaFields && (
-              <FieldsOfStudyContainer>Multimedia</FieldsOfStudyContainer>
+              <FieldsOfStudyContainer>
+                <FieldOfStudy
+                  facultyShortcut="fmk"
+                  title="Mediální a komunikační studia"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="fmk"
+                  title="Výtvarná umění"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+              </FieldsOfStudyContainer>
             )}
             <FacultyMenuWidget
               toggleField={toggleHumanitiesFields}
@@ -108,7 +135,23 @@ class StudyTemplate extends Component {
               facultyShortcut="fhs"
             />
             {showHumanitiesFields && (
-              <FieldsOfStudyContainer>Humanity</FieldsOfStudyContainer>
+              <FieldsOfStudyContainer>
+                <FieldOfStudy
+                  facultyShortcut="fhs"
+                  title="Filologie"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="fhs"
+                  title="Ošetřování"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="fhs"
+                  title="Pedagogika"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+              </FieldsOfStudyContainer>
             )}
             <FacultyMenuWidget
               toggleField={toggleInformaticsFields}
@@ -116,7 +159,23 @@ class StudyTemplate extends Component {
               facultyShortcut="fai"
             />
             {showInformaticsFields && (
-              <FieldsOfStudyContainer>Informatics</FieldsOfStudyContainer>
+              <FieldsOfStudyContainer>
+                <FieldOfStudy
+                  facultyShortcut="fai"
+                  title="Softwarové inženýrství"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="fai"
+                  title="Informatické a řídící technologie"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="fai"
+                  title="Bezpečnostní technologie, systémy a management"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+              </FieldsOfStudyContainer>
             )}
             <FacultyMenuWidget
               toggleField={toggleLogisticsFields}
@@ -124,7 +183,23 @@ class StudyTemplate extends Component {
               facultyShortcut="flkr"
             />
             {showLogisticsFields && (
-              <FieldsOfStudyContainer>Logistics</FieldsOfStudyContainer>
+              <FieldsOfStudyContainer>
+                <FieldOfStudy
+                  facultyShortcut="flkr"
+                  title="Bezpečnost společnosti"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="flkr"
+                  title="Ochrana obyvatelstva"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+                <FieldOfStudy
+                  facultyShortcut="flkr"
+                  title="Procesní inženýrství"
+                  additionalInfo="Prezenční, bakalářský"
+                />
+              </FieldsOfStudyContainer>
             )}
           </Layout>
         </Layout>
