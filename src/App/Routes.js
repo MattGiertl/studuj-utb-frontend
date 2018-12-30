@@ -13,6 +13,7 @@ import StudentProjectsInfoPage from '../pages/StudentProjectsInfoPage';
 import SportInfoPage from '../pages/SportInfoPage';
 import AboutPage from '../pages/AboutPage';
 import StudyPage from '../pages/StudyPage';
+import FieldOfStudyDetailPage from '../pages/FieldOfStudyDetailPage';
 
 const Routes = () => (
   <HashRouter>
@@ -41,6 +42,11 @@ const Routes = () => (
       <Route exact path="/zabava-a-sport" component={SportInfoPage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/study" component={StudyPage} />
+      <Route
+        exact
+        path="/study/study-field/:fieldName"
+        component={FieldOfStudyDetailPage}
+      />
       <Route component={NotFoundPage} />
     </Switch>
   </HashRouter>
