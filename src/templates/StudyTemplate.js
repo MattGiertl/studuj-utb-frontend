@@ -18,10 +18,10 @@ class StudyTemplate extends Component {
     const {
       showTechnologyFields,
       showManagementFields,
-      showMultimediaFields,
       showHumanitiesFields,
       showInformaticsFields,
       showLogisticsFields,
+      showMultimediaFields,
       toggleTechnologyFields,
       toggleHumanitiesFields,
       toggleManagementFields,
@@ -110,8 +110,9 @@ class StudyTemplate extends Component {
                 />
               </FieldsOfStudyContainer>
             )}
+
             <FacultyMenuWidget
-              toggleMultimediaFields={toggleMultimediaFields}
+              toggleField={toggleMultimediaFields}
               facultyName="Fakulta multimediálních komunikací"
               facultyShortcut="fmk"
             />
@@ -129,6 +130,7 @@ class StudyTemplate extends Component {
                 />
               </FieldsOfStudyContainer>
             )}
+
             <FacultyMenuWidget
               toggleField={toggleHumanitiesFields}
               facultyName="Fakulta humanitních studií"
@@ -153,6 +155,7 @@ class StudyTemplate extends Component {
                 />
               </FieldsOfStudyContainer>
             )}
+
             <FacultyMenuWidget
               toggleField={toggleInformaticsFields}
               facultyName="Fakulta aplikované informatiky"
@@ -177,6 +180,7 @@ class StudyTemplate extends Component {
                 />
               </FieldsOfStudyContainer>
             )}
+
             <FacultyMenuWidget
               toggleField={toggleLogisticsFields}
               facultyName="Fakulta logistiky a krizového řešení"

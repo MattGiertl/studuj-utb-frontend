@@ -45,15 +45,17 @@ class StudyPage extends Component {
     const {
       showTechnologyFields,
       showManagementFields,
-      showMultimediaFields,
       showInformaticsFields,
       showLogisticsFields,
+      showHumanitiesFields,
+      showMultimediaFields,
     } = this.state;
     return (
       <StudyTemplate
         showTechnologyFields={showTechnologyFields}
-        showManagementFields={showManagementFields}
         showMultimediaFields={showMultimediaFields}
+        showManagementFields={showManagementFields}
+        showHumanitiesFields={showHumanitiesFields}
         showInformaticsFields={showInformaticsFields}
         showLogisticsFields={showLogisticsFields}
         toggleTechnologyFields={this.toggleTechnologyFields}
