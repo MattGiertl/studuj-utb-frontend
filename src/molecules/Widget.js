@@ -3,7 +3,6 @@ import { jsx } from '@emotion/core';
 import Layout from '../atoms/Layout';
 import Paragraph from '../atoms/Paragraph';
 import Icon from '../atoms/Icon/Icon';
-import { Redirect } from 'react-router-dom';
 
 const Widget = ({
   count,
