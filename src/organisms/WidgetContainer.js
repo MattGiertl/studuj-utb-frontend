@@ -3,7 +3,14 @@ import { jsx } from '@emotion/core';
 import Widget from '../molecules/Widget';
 import Layout from '../atoms/Layout';
 
-const WidgetContainer = props => (
+const WidgetContainer = ({
+  upperCount,
+  upperTitle,
+  leftCount,
+  leftTitle,
+  rightCount,
+  rightTitle,
+}) => (
   <Layout
     css={{
       width: '100%',
@@ -12,10 +19,10 @@ const WidgetContainer = props => (
       marginBottom: '10px',
     }}
   >
-    <Widget count="10 000" title="Počet studentů" />
+    <Widget count={upperCount} title={upperTitle} />
     <Layout css={{ justifyContent: 'space-between', marginTop: '15px' }}>
-      <Widget sm count="6" title="Počet fakult" widgetWidth="48%" />
-      <Widget sm count="111" title="Počet oborů" widgetWidth="48%" />
+      <Widget count={leftCount} title={leftTitle} widgetWidth="48%" />
+      <Widget count={rightCount} title={rightTitle} widgetWidth="48%" />
     </Layout>
   </Layout>
 );

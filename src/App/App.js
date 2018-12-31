@@ -16,7 +16,10 @@ import {
   faInfoCircle,
 } from '@fortawesome/free-solid-svg-icons';
 
+import { fab } from '@fortawesome/free-brands-svg-icons';
+
 library.add(
+  fab,
   faUniversity,
   faBook,
   faUserGraduate,
