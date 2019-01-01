@@ -12,3 +12,11 @@ export const isIphoneXDisplay = () => {
 
   return screen.width === 1125 && screen.height === 2436;
 };
+
+export const isInStandaloneMode = () => {
+  const standaloneIos = window.navigator.standalone === true;
+  const standaloneOther = window.matchMedia('(display-mode: standalone)')
+    .matches;
+
+  return standaloneIos || standaloneOther;
+};

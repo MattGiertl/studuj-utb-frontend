@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import { jsx } from '@emotion/core';
 import TabBar from './Tabbar';
 import TabBarItem from '../molecules/TabBarItem';
-import { isIos, isIphoneXDisplay } from '../utils/utils';
+import { isIos, isIphoneXDisplay, isInStandaloneMode } from '../utils/utils';
 
 class PageFooter extends Component {
   state = {
@@ -12,7 +12,7 @@ class PageFooter extends Component {
   };
 
   componentWillMount() {
-    const isX = isIos() && isIphoneXDisplay();
+    const isX = isIos() && isIphoneXDisplay() && isInStandaloneMode();
     this.setState({ isX: isX });
   }
 
