@@ -15,6 +15,7 @@ class AboutPageTemplate extends Component {
   render() {
     return (
       <PageLayoutWrapper
+        contentHeight="100vh"
         header={
           <PageHeader
             backButton

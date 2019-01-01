@@ -8,8 +8,7 @@ const FacultyMenuItem = ({ toggleField, children, facultyShortcut }) => (
     css={{
       flex: 1,
       background: '#EDEDED',
-      borderRight: '1px solid gray',
-      justifyContent: 'space-around',
+      justifyContent: 'space-between',
       alignItems: 'center',
     }}
   >

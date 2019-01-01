@@ -4,12 +4,23 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const utbIcon = require('./utb-ico-white.png');
 
-const Icon = ({ iconName, size, color, marginTop }) => (
+const Icon = ({
+  iconName,
+  size,
+  color,
+  marginTop,
+  marginLeft,
+  marginRight,
+}) => (
   <FontAwesomeIcon
     size={size}
     icon={iconName}
     color={color}
-    css={{ marginTop: marginTop }}
+    css={{
+      marginTop: marginTop,
+      marginLeft: marginLeft,
+      marginRight: marginRight,
+    }}
   />
 );
 

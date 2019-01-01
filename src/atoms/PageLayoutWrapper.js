@@ -14,16 +14,18 @@ const PageLayoutWrapper = ({
   children,
   footer,
   backgroundCol,
+  contentHeight,
   ...props
 }) => (
   <Wrapper {...props}>
     <Layout>{header}</Layout>
     <Layout
       css={{
-        background: backgroundCol,
+        background: 'white',
         overflow: 'auto',
         display: 'flex',
         flexDirection: 'column',
+        height: contentHeight,
       }}
     >
       {children}

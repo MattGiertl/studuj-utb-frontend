@@ -43,7 +43,7 @@ class LibraryTemplate extends Component {
         }
         footer={<PageFooter />}
       >
-        <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>
+        <Layout css={{ flexDirection: 'column', margin: '0 12px', marginBottom: '20px' }}>
           <WidgetContainer
             upperCount="110 000"
             upperTitle="Počet knih"
