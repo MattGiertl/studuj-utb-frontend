@@ -17,6 +17,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 import { fab } from '@fortawesome/free-brands-svg-icons';
+import DesktopPage from '../pages/DesktopPage/DesktopPage';
 
 library.add(
   fab,
@@ -33,8 +34,21 @@ library.add(
 );
 
 class App extends Component {
+  state = {
+    isMobile: undefined,
+  };
+
+  isMobile = () =>
+    navigator.userAgent.match(/(iPad)|(iPhone)|(iPod)|(android)|(webOS)/i);
+
+  componentWillMount() {
+    const isMobile = this.isMobile();
+    this.setState({ isMobile: isMobile });
+  }
+
   render() {
-    return <Routes />;
+    const { isMobile } = this.state;
+    return isMobile ? <Routes /> : <DesktopPage />;
   }
 }
 
