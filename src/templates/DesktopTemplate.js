@@ -25,7 +25,7 @@ class DesktopTemplate extends Component {
         }}
       >
         <Paragraph textAlign="center" fontSize="3.5rem">
-          Tato aplikace je pouze dostupná z mobilního zařízení.
+          Tato aplikace je pouze dostupná z mobilních zařízení.
         </Paragraph>
       </Layout>
     );
