@@ -24,7 +24,7 @@ class PageFooter extends Component {
             label="Studium"
             icon="user-graduate"
             id="calendarTab"
-            to="/study"
+            to="/studium"
           />
           <TabBarItem to="/knihovna" label="Knihovna" icon="book" id="moreTab" />
         </TabBar>

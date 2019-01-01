@@ -31,7 +31,7 @@ const FieldOfStudy = ({ facultyShortcut, title, additionalInfo, to }) => {
   }
 
   return (
-    <NavLink to={`/study/study-field/${to}`} css={{ textDecoration: 'none' }}>
+    <NavLink to={`/studium/obor-${to}`} css={{ textDecoration: 'none' }}>
       <Layout
         css={{
           height: '40px',
