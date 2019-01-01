@@ -2,7 +2,6 @@ import React from 'react';
 import { Route, Switch, HashRouter } from 'react-router-dom';
 import MainPage from '../pages/UniversityPage';
 import NotFoundPage from '../pages/NotFoundPage';
-import OtherPage from '../pages/OtherPage';
 import AboutPage from '../pages/AboutPage';
 import StudyPage from '../pages/StudyPage';
 import FieldOfStudyDetailPage from '../pages/FieldOfStudyDetailPage';
@@ -14,7 +13,6 @@ const Routes = () => (
   <HashRouter>
     <Switch>
       <Route exact path="/" component={MainPage} />
-      <Route exact path="/other" component={OtherPage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/study" component={StudyPage} />
       <Route
