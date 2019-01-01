@@ -17,12 +17,12 @@ class PageFooter extends Component {
   }
 
   render() {
-    // const isIphoneX = isIos() && isIphoneXDisplay();
     const { children } = this.props;
+    const { isX } = this.state;
     return (
       <>
         {children}
-        <TabBar bordered>
+        <TabBar bordered addPadding={isX}>
           <TabBarItem
             label="Univerzita"
             icon="university"
