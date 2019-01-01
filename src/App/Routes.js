@@ -14,10 +14,10 @@ const Routes = () => (
     <Switch>
       <Route exact path="/" component={MainPage} />
       <Route exact path="/about" component={AboutPage} />
-      <Route exact path="/study" component={StudyPage} />
+      <Route exact path="/studium" component={StudyPage} />
       <Route
         exact
-        path="/study/study-field/:fieldName"
+        path="/studium/obor-:fieldName"
         component={FieldOfStudyDetailPage}
       />
       <Route
