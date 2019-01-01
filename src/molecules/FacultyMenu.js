@@ -20,15 +20,12 @@ const FacultyMenu = ({ toggleField, facultyShortcut }) => (
       <Paragraph color="#808080">Zobrazit obory</Paragraph>
     </FacultyMenuItem>
     <NavLink
-      to={`/study/faculty/${facultyShortcut}`}
+      to={`/studium/fakulta-${facultyShortcut}`}
       css={{ width: '50%', textDecoration: 'none' }}
     >
       <FacultyMenuItem>
         <Icon iconName="info-circle" color="#808080" />
-        <Paragraph
-          css={{ margin: 0, padding: '6px 0' }}
-          color="#808080"
-        >
+        <Paragraph css={{ margin: 0, padding: '6px 0' }} color="#808080">
           Více o fakultě
         </Paragraph>
       </FacultyMenuItem>

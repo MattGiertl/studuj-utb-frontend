@@ -22,7 +22,7 @@ const Routes = () => (
       />
       <Route
         exact
-        path="/study/faculty/:facultyName"
+        path="/studium/fakulta-:facultyName"
         component={FacultyInfoPage}
       />
       <Route path="/knihovna" component={LibraryPage} />
