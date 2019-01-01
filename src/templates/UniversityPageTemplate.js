@@ -22,9 +22,7 @@ class UniversityPageTemplate extends Component {
           <PageHeader
             left={<UtbIcon />}
             middle={
-              <Paragraph fontWeight="bold">
-                Univerzita Tomáše Bati
-              </Paragraph>
+              <Paragraph fontWeight="bold">Univerzita Tomáše Bati</Paragraph>
             }
             right={
               <NavLink
@@ -44,60 +42,67 @@ class UniversityPageTemplate extends Component {
               </NavLink>
             }
           />
-      }
+        }
         footer={<PageFooter />}
       >
         <Layout css={{ flexDirection: 'column', margin: '0 12px' }}>
-          <WidgetContainer upperCount="10 000" upperTitle="Počet studentů" leftCount="6" leftTitle="Počet fakult" rightCount="111" rightTitle="Počet oborů" />
+          <WidgetContainer
+            upperCount="10 000"
+            upperTitle="Počet studentů"
+            leftCount="6"
+            leftTitle="Počet fakult"
+            rightCount="111"
+            rightTitle="Počet oborů"
+          />
           <UnderlinedHeading title="Proč studovat na UTB?" />
           <TextWidgetContainer>
             <TextWidget
               title="Nabídka studia"
               text="Vyber si z bohaté nabídky studijních programů a oborů"
               number="1"
-              to="/nabidka-studia"
+              to="/univerzita/info-nabidka-studia"
             />
             <TextWidget
               title="Atraktivní prostředí"
               text="Vzdělávej se v moderním a špičkově vybeveném prostředí"
               number="2"
-              to="/atraktivni-prostredi"
+              to="/univerzita/info-atraktivni-prostredi"
             />
             <TextWidget
               title="Výjezdy do zahraničí"
               text="Využij široké možnosti studia a praxe v zahraničí!"
               number="3"
-              to="/vyjezdy-do-zahranici"
+              to="/univerzita/info-vyjezdy-do-zahranici"
             />
             <TextWidget
               title="Praxe ve firmách"
               text="Získavej cenné zkušenosti z praxe již během studia"
               number="4"
-              to="/praxe-ve-firmach"
+              to="/univerzita/info-praxe-ve-firmach"
             />
             <TextWidget
               title="Job Centrum"
               text="Využij soustavné kariérní poradenství po dobu studia"
               number="5"
-              to="/job-centrum"
+              to="/univerzita/info-job-centrum"
             />
             <TextWidget
               title="Akademická poradna"
               text="Spolehni se v náročných situacích na odborníky"
               number="6"
-              to="/akademicka-poradna"
+              to="/univerzita/info-akademicka-poradna"
             />
             <TextWidget
               title="Studentské projekty"
               text="Zapoj se do široké škály studentských aktivit"
               number="7"
-              to="/studentske-projekty"
+              to="/univerzita/info-studentske-projekty"
             />
             <TextWidget
               title="Zábava a sport"
               text="Užij si vysokoškolský společenský život naplno"
               number="8"
-              to="/zabava-a-sport"
+              to="/univerzita/info-zabava-a-sport"
             />
           </TextWidgetContainer>
         </Layout>
