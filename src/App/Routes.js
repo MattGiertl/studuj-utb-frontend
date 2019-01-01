@@ -13,7 +13,7 @@ const Routes = () => (
   <HashRouter>
     <Switch>
       <Route exact path="/" component={MainPage} />
-      <Route exact path="/about" component={AboutPage} />
+      <Route exact path="/o-aplikaci" component={AboutPage} />
       <Route exact path="/studium" component={StudyPage} />
       <Route
         exact

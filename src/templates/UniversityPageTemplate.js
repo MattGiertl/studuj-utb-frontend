@@ -36,7 +36,7 @@ class UniversityPageTemplate extends Component {
                   fontSize: '25px',
                   color: 'white',
                 }}
-                to="about"
+                to="o-aplikaci"
               >
                 ...
               </NavLink>
