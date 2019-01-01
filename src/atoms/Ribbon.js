@@ -11,6 +11,9 @@ const Ribbon = styled.div(props => ({
   minHeight: '50px',
   color: 'white',
   background: props.orange ? '#FF590B' : 'white',
+  borderTop: props.bordered ? '1px solid #EDEDED' : null,
+  paddingBottom: props.addPadding ? '20px' : null,
+  paddingTop: props.addPadding ? '5px' : null,
 }));
 
 export default Ribbon;

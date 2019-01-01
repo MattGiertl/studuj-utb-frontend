@@ -14,6 +14,7 @@ class FieldOfStudyTemplate extends Component {
 
     return (
       <PageLayoutWrapper
+        contentHeight="100vh"
         header={
           <PageHeader
             backButton

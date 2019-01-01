@@ -17,6 +17,7 @@ class FacultyInfoTemplate extends Component {
     } = this.props.details;
     return (
       <PageLayoutWrapper
+        contentHeight="100vh"
         header={
           <PageHeader
             backButton

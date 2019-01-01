@@ -11,6 +11,7 @@ class UniversityInfoTemplate extends Component {
     const { info } = this.props;
     return (
       <PageLayoutWrapper
+        contentHeight="100vh"
         header={
           <PageHeader
             backButton
@@ -21,7 +22,7 @@ class UniversityInfoTemplate extends Component {
         }
       >
         <Layout
-          css={{ flexDirection: 'column', width: '100%', marginBottom: '50px' }}
+          css={{ flexDirection: 'column', width: '100%', marginBottom: '70px' }}
         >
           {info}
         </Layout>

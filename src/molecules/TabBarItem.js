@@ -8,8 +8,10 @@ import styled from '@emotion/styled';
 import Paragraph from '../atoms/Paragraph';
 import Icon from '../atoms/Icon/Icon';
 
-const Wrapper = styled.div({
+const Wrapper = styled.div(props => ({
   display: 'block',
+  borderRight: props.bordered ? '1px solid #EDEDED' : null,
+  borderLeft: props.bordered ? '1px solid #EDEDED' : null,
   flex: 1,
   fontSize: '1rem',
   cursor: 'pointer',
@@ -23,7 +25,7 @@ const Wrapper = styled.div({
   '&.active': {
     color: '#FF590B',
   },
-});
+}));
 
 const NavLinkWrapper = Wrapper.withComponent(NavLink);
 
