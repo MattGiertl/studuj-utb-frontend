@@ -18,7 +18,7 @@ const PageLayoutWrapper = ({
   ...props
 }) => (
   <Wrapper {...props}>
-    <Layout>{header}</Layout>
+    <Layout css={{ position: 'sticky', top: '0' }}>{header}</Layout>
     <Layout
       css={{
         background: 'white',
