@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #FF590B;
+  background: #ff590b;
   width: 100vw;
   height: 100vh;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -19,4 +19,12 @@ code {
 #root {
   width: 100vw;
   height: 100vh;
+}
+
+.switch-wrapper {
+  position: relative;
+}
+
+.switch-wrapper > div {
+  position: absolute;
 }

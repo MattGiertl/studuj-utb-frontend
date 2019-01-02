@@ -3,7 +3,9 @@ import UniversityPageTemplate from '../templates/UniversityPageTemplate';
 
 class UniversityPage extends Component {
   render() {
-    return <UniversityPageTemplate />;
+    return (
+    <UniversityPageTemplate />
+    )
   }
 }
 
